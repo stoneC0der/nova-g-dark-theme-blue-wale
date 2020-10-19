@@ -1,0 +1,309 @@
+meta {
+  -theme-display-name: "G-Dark (Blue Wale)";
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: false;
+}
+
+/*
+ * Window styles
+ */
+meta.window {
+  background-color: #00324b;
+  border-color: #00324b;
+}
+meta.titlebar {
+  color: #dcf2f7;
+  background: linear-gradient(#00324b, #00324f);
+  border-color: #00324b;
+}
+meta.titlebar.inactive {
+  background-color: #00324b;
+}
+
+meta.button {
+  background: linear-gradient(#075779, #07577f);
+  border: linear-gradient(#075779, #07577f);
+  color: #dcf2f7;
+}
+meta.button.highlighted {
+  background: linear-gradient(#80cbc420, #80cbc450);
+  color: #dcf2f7;
+}
+meta.button.selected {
+  color: #dcf2f7;
+}
+meta.button.highlighted.selected {
+  color: #dcf2f7;
+}
+meta.button.disabled {
+  background: linear-gradient(#024764, #024768);
+  border: linear-gradient(#024764, #024768);
+  color: #dcf2f7;
+}
+
+meta.textfield {
+  background-color: #033953;
+  border-color: #033953;
+  color: #dcf2f7;
+}
+
+meta.accent {
+  color: #dcf2f7;
+}
+
+/*
+ * Document styles
+ */
+meta.document {
+  background-color: #00324b;
+  border-color: #00324b;
+}
+
+meta.document.button {
+  background: linear-gradient(hsb(210, 10%, 26%), hsb(210, 10%, 22%));
+  border: linear-gradient(hsb(210, 10%, 12%), hsb(210, 10%, 8%));
+}
+meta.document.button.disabled {
+  background: linear-gradient(
+    hsba(220, 10%, 26%, 0.3),
+    hsba(220, 10%, 22%, 0.3)
+  );
+}
+meta.document.button.highlighted {
+  background: linear-gradient(hsb(210, 10%, 36%), hsb(210, 10%, 32%));
+}
+
+meta.document.textfield {
+  background-color: hsb(210, 10%, 10%);
+  border-color: hsb(210, 10%, 6%);
+}
+
+/* Text */
+meta.text {
+  color: #dcf2f7;
+}
+meta.text.invisible {
+  color: hsb(210, 20%, 20%);
+}
+meta.text.selected {
+}
+
+/* Cursor */
+meta.cursor {
+  background-color: #1c324b;
+}
+
+/* Indentation Guides */
+meta.indentguide {
+  border-color: #06638b50;
+}
+
+/* Gutter */
+meta.gutter {
+  color: #0b577e;
+}
+meta.gutter.selected {
+  background-color: #04131490;
+  color: #229cd4;
+}
+
+/*
+ * Syntax styles
+ */
+
+keyword {
+  color: #e26a6a;
+}
+comment {
+  color: #151515;
+}
+processing {
+  color: dark;
+}
+declaration {
+  color: #ef981f;
+}
+bracket {
+  color: hsb(210, 20%, 52%);
+}
+operator {
+  color: #fc6399;
+}
+invalid {
+  background-color: #ff5370;
+  color: #dcf2f7;
+}
+link {
+  color: #f07178;
+}
+
+/* Values */
+value.boolean {
+  color: #f78c6c;
+}
+value.null {
+  color: #f78c6c;
+}
+value.number {
+  color: #c97807;
+}
+value.entity {
+  color: #ffaaa5;
+}
+value.symbol {
+  color: #ffaaa5;
+}
+
+/* Identifiers */
+identifier.type {
+  color: #88d8b0;
+}
+identifier.type.class {
+  color: #ffcb6b;
+}
+identifier.constant {
+  color: #ffcb6b;
+}
+identifier.property,
+identifier.global,
+identifier.variable {
+  color: #9bc1cc;
+}
+
+identifier.decorator,
+identifier.function {
+  color: #63ace5;
+}
+identifier.method {
+  color: #51ceff;
+}
+identifier.key {
+  color: #f0650e;
+}
+identifier.argument {
+  color: #5c8692;
+}
+
+/* Strings */
+string {
+  color: #88d8b0;
+}
+string.key {
+  color: #c792ea;
+}
+string-template {
+  color: #88d8f0;
+}
+string-template.value {
+  color: #f78c6c;
+}
+regex {
+  color: #f0650e;
+}
+regex.escaped {
+  color: #20d5e2;
+}
+cdata {
+  color: hsb(210, 60%, 100%);
+}
+
+/* Markup */
+markup.heading {
+  color: #c3e88d;
+}
+markup.line {
+  color: #a6d4f7;
+}
+markup.bold {
+  color: #f07178;
+  font-weight: bold;
+}
+markup.italic {
+  color: #f071d8;
+  font-style: italic;
+}
+markup.strikethrough {
+  color: hsb(0, 60%, 100%);
+}
+markup.list.item {
+  color: hsb(30, 50%, 80%);
+}
+markup.code {
+  background-color: #a6d4f790;
+}
+
+/* Types */
+definition.class {
+  color: #ef981f;
+  font-weight: bold;
+}
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  font-weight: bold;
+  color: #f0650e;
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  color: #f0650e;
+}
+
+/* Tags */
+tag {
+  color: #ff6f69;
+}
+tag.framework {
+  color: #ff69b4;
+}
+tag.attribute.name {
+  color: #ffcb6b;
+}
+tag.attribute.value {
+  color: #88d8b0;
+}
+tag.attribute.value.link {
+  color: #88d8e0;
+}
+
+/* Styles */
+style.at {
+  color: hsb(25, 75%, 100%);
+  font-weight: bold;
+}
+style.selector.element {
+  font-weight: bold;
+  color: #ff6f69;
+}
+style.selector.identifier.id {
+  color: #2eb7fb;
+}
+style.selector.identifier.class {
+  color: #ffcb6b;
+}
+style.selector.pseudoclass {
+  color: hsb(258, 40%, 87%);
+}
+style.selector.pseudoelement {
+  color: hsb(166, 40%, 78%);
+}
+style.attribute.name {
+  color: #96ceb4;
+}
+style.value.number {
+  color: #c97807;
+}
+style.value.color.hex {
+  color: #ffaaa5;
+}
+style.value.keyword {
+  color: #ffaaa5;
+}
+style.value.color.named {
+  color: hsb(210, 60%, 100%);
+}
